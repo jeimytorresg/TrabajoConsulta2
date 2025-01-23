@@ -97,17 +97,17 @@ object MySQLejemplo {
 ![alt text](image.png)
 ### Explicación del código
 1. **Configuración:**
-  - url: URL de conexión JDBC (localhost, puerto 3306, base de datos scala_test).
-  - user y password: Credenciales de la base de datos.
+   - url: URL de conexión JDBC (localhost, puerto 3306, base de datos scala_test).
+    - user y password: Credenciales de la base de datos.
 2. **Cargar el Driver JDBC:**
-  - Class.forName("com.mysql.cj.jdbc.Driver") carga el driver necesario para conectarse a MySQL.
+    - Class.forName("com.mysql.cj.jdbc.Driver") carga el driver necesario para conectarse a MySQL.
 3. **Establecer Conexión:**
-  - DriverManager.getConnection(url, user, password) crea la conexión con la base de datos.
+    - DriverManager.getConnection(url, user, password) crea la conexión con la base de datos.
 4. **Consulta SQL:**
-  - statement.executeQuery("SELECT * FROM users") ejecuta la consulta SQL.
-  Se itera sobre el ResultSet para mostrar los datos.
+    - statement.executeQuery("SELECT * FROM users") ejecuta la consulta SQL.
+    Se itera sobre el ResultSet para mostrar los datos.
 5. **Cerrar Conexión:**
-  En el bloque finally, la conexión se cierra para liberar recursos.
+    En el bloque finally, la conexión se cierra para liberar recursos.
 
 
 ### Ejemplo con Doobie
@@ -157,3 +157,10 @@ Doobie es una alternativa funcional más robusta:
 - **Consultas declarativas** más limpias y reutilizables.
 - **Validación de SQL** en tiempo de compilación.
 - **Soporte nativo para transacciones**.
+
+## Referencias
+1. [https://www.baeldung.com/scala/doobie-intro](https://www.baeldung.com/scala/doobie-intro)  
+2. [https://rockthejvm.com/articles/learning-doobie-for-the-greater-good](https://rockthejvm.com/articles/learning-doobie-for-the-greater-good)
+3. [https://alvinalexander.com/scala/scala-jdbc-connection-mysql-sql-select-example/](https://alvinalexander.com/scala/scala-jdbc-connection-mysql-sql-select-example/)
+
+
