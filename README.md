@@ -93,6 +93,8 @@ object MySQLejemplo {
 }
 
 ```
+
+![alt text](image.png)
 ### Explicación del código
 1. **Configuración:**
   - url: URL de conexión JDBC (localhost, puerto 3306, base de datos scala_test).
@@ -135,7 +137,7 @@ object ejemploDoobie {
   }
 }
 ```
-
+![alt text](image-1.png)
 
 ### Explicación del Código
 1. **Transactor**: Configura la conexión a la base de datos.
